@@ -43,9 +43,7 @@
     <!-- ----------------------------------------------------------------------- -->
 
     <main>
-        <div class="container">
-            <%-body%>
-        </div>
+      <%-body%>
     </main>
 
     <!-- ----------------------------------------------------------------------- -->
@@ -53,17 +51,20 @@
     <!-- ----------------------------------------------------------------------- -->
 
     <footer id="footer">
-      <div class="container-lg">
+      <div class="container-lg py-5">
         <div class="row">
-          <div class="col-4 footerMap">
+          <div class="col-4 footer__map">
             <iframe src="https://maps.google.com/maps?q=colegio%20tecnico%20de%20la%20univrsidad%20de%20mend&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameBorder="0" style="border:0" allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
           </div>
-          <div class="col-4 row justify-content-center align-items-center footerTitle">
-            <h6 class="text-center text-light">ETec GBBS</h6>
+          <div class="col-4 row justify-content-center align-items-center footer__title">
+            <h6 class="text-center text-light">ETec GBBS <i class="fa-solid fa-address-book"></i></h6>
+            <p class="m-0">jorge.favier@etec.um.edu.ar</p>
+            <p class="m-0">contacto.repi@um.edu.ar</p>
+            <p class="m-0">Repi: +54 261 420 2017</p>
           </div>
-          <div class="col-4 row justify-content-center align-items-center footerLogos">
-            <img className='col-6' src="./img/logoEtec.png" alt="" />
-            <img className='col-6' src="./img/logoUm.png" alt="" />
+          <div class="col-4 row justify-content-center align-items-center footer__logos">
+            <a href="#" class='col-5 p-0'><img src="./img/logoEtec.png" alt="" /></a>
+            <a href="#" class='col-5 p-0'><img src="./img/logoUm.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -78,5 +79,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <!-- ----------------------------- FONTAWESOME ----------------------------- -->
     <script src="https://kit.fontawesome.com/a6528d3960.js" crossorigin="anonymous"></script>
+    <!-- -------------------------------- MI JS -------------------------------- -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

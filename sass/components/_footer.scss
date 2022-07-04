@@ -11,21 +11,33 @@
         z-index: -1;
         width: 100%;
         height: 100%;
-        background-color: $color-secondary;
+        background-color: $color-blueDark;
     }
 
     .container-lg{
-        .footerMap{
+        .footer__map{
             height: 170px;
         }
 
-        .footerTitle{
+        .footer__title{
+            p{
+                text-align: center;
+                color: #fff;
+            }
 
         }
 
-        .footerLogos{
-            img{
-                width: 100px;
+        .footer__logos{
+            a{
+                text-align: end;
+                img{
+                    width: 80px;
+                }
+
+                &:nth-child(2){
+                    text-align: start;
+                    margin-left: 15px;
+                }
             }
         }
     }

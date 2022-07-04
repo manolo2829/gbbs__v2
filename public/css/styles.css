@@ -1,6 +1,14 @@
 /* -------------------------------- FONT SIZE ------------------------------- */
 /* --------------------------------- PADDING -------------------------------- */
 /* --------------------------------- MARGIN --------------------------------- */
+#header .navbar .container-fluid .navbar-collapse .navbar-nav a {
+  color: #000;
+}
+#header .navbar .container-fluid .navbar-collapse .navbar-nav a.active {
+  text-decoration: underline;
+  color: #243C7C;
+}
+
 #footer {
   background-color: rgba(0, 0, 0, 0.53);
   position: relative;
@@ -14,11 +22,26 @@
   height: 100%;
   background-color: #243C7C;
 }
-#footer .container-lg .footerMap {
+#footer .container-lg .footer__map {
   height: 170px;
 }
-#footer .container-lg .footerLogos img {
-  width: 100px;
+#footer .container-lg .footer__title p {
+  text-align: center;
+  color: #fff;
+}
+#footer .container-lg .footer__logos a {
+  text-align: end;
+}
+#footer .container-lg .footer__logos a img {
+  width: 80px;
+}
+#footer .container-lg .footer__logos a:nth-child(2) {
+  text-align: start;
+  margin-left: 15px;
+}
+
+#home #home__header {
+  background-color: #0072BB;
 }
 
 /*# sourceMappingURL=styles.css.map */
