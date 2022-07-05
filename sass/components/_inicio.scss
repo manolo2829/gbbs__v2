@@ -38,9 +38,9 @@
 
             .about__us__team__container{
                 position: relative;
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                transition: all .3s ease-out;
                 display: none;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path .3s ease-out;
                 &.active{
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                     display: block;

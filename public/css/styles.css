@@ -71,9 +71,9 @@
 }
 #home #home__about__us .container-lg .about__us__team__container {
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  transition: all 0.3s ease-out;
   display: none;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.3s ease-out;
 }
 #home #home__about__us .container-lg .about__us__team__container.active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
