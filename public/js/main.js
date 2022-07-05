@@ -20,3 +20,15 @@ header__links.forEach( link => {
 
     })
 })
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+
+const about__us__btn__open__team = document.querySelector('#about__us__btn__open__team')
+const about__us__team__container = document.querySelector('#about__us__team__container')
+
+about__us__btn__open__team.addEventListener('click', () => {
+    about__us__team__container.classList.toggle('active')
+})

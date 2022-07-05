@@ -40,8 +40,98 @@
   margin-left: 15px;
 }
 
+/* -------------------------------- FONT SIZE ------------------------------- */
+/* --------------------------------- PADDING -------------------------------- */
+/* --------------------------------- MARGIN --------------------------------- */
+#home {
+  background-color: #243C7C;
+}
 #home #home__header {
   background-color: #0072BB;
+}
+#home #home__about__us .container-lg .about__us__title {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+#home #home__about__us .container-lg .about__us__info h1 {
+  color: #FFFFFF;
+  font-weight: lighter;
+  line-height: 40px;
+}
+#home #home__about__us .container-lg .about__us__features p {
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+#home #home__about__us .container-lg .about__us__features h3 {
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+#home #home__about__us .container-lg .about__us__team__container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.3s ease-out;
+  display: none;
+}
+#home #home__about__us .container-lg .about__us__team__container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  display: block;
+}
+#home #home__about__us .container-lg .about__us__team__container .about__us__team img {
+  width: 100%;
+  max-width: 400px;
+}
+#home #home__about__us .container-lg .about__us__team__container .about__us__team h2 {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+#home #home__about__us .container-lg .about__us__team__container .about__us__team h3 {
+  color: #FFFFFF;
+  line-height: 40px;
+  font-weight: lighter;
+}
+#home #home__about__us .container-lg .about__us__team__container .about__us__dr img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+}
+#home #home__about__us .container-lg .about__us__team__container .about__us__dr h2 {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+#home #home__about__us .container-lg .about__us__team__container .about__us__dr h3 {
+  color: #FFFFFF;
+  line-height: 40px;
+  font-weight: lighter;
+}
+@media (max-width: 992px) {
+  #home #home__about__us .container-lg .about__us__team__container .about__us__dr h2 {
+    text-align: center;
+  }
+  #home #home__about__us .container-lg .about__us__team__container .about__us__dr h3 {
+    text-align: center;
+  }
+}
+#home #home__about__us .container-lg #about__us__btn__open__team {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0072BB;
+  color: #FFFFFF;
+  margin: auto;
+  width: 100%;
+  max-width: 200px;
+}
+#home #home__about__us .container-lg #about__us__btn__open__team:hover {
+  border-bottom: 2px solid #FFFFFF;
+  background-color: #111f46;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main {
+  margin-top: 56px;
 }
 
 /*# sourceMappingURL=styles.css.map */

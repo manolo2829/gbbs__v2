@@ -1,7 +1,122 @@
-@import '../base/colors';
+@import '../base/base';
 
 #home{
+    background-color: $color-blueDark;
     #home__header{
         background-color: $color-blue;
     }
+
+    #home__about__us{
+        .container-lg{
+            .about__us__title{
+                color: $color-white;
+                font-weight: 400;
+            }
+
+            .about__us__info{
+                h1{
+                    color: $color-white;
+                    font-weight: lighter;
+                    line-height: 40px;
+                }
+            }
+
+            .about__us__features{
+                p{
+                    color: $color-white;
+                    font-weight: 400;
+                    margin-bottom: $m-3;
+                }
+
+                h3{
+                    font-size: $h5-font-size;
+                    line-height: 30px;
+                    color: $color-white;
+                    font-weight: lighter;
+                }
+            }
+
+            .about__us__team__container{
+                position: relative;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: all .3s ease-out;
+                display: none;
+                &.active{
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    display: block;
+                }
+
+                .about__us__team{
+                    img{
+                        width: 100%;
+                        max-width: 400px;
+                    }
+    
+                    
+                    h2{
+                        color: $color-white;
+                        font-weight: 400;
+                    }
+    
+                    h3{
+                        color: $color-white;
+                        line-height: 40px;
+                        font-weight: lighter;
+                    }
+                }
+    
+                .about__us__dr{
+                    img{
+                        width: 100%;
+                        max-width: 250px;
+                        border-radius: 50%;
+                    }
+    
+                    
+                    h2{
+                        color: $color-white;
+                        font-weight: 400;
+                    }
+    
+                    h3{
+                        color: $color-white;
+                        line-height: 40px;
+                        font-weight: lighter;
+                    }
+    
+                    @media (max-width: 992px) {
+                        h2{
+                            text-align: center;
+                        }                    
+                        h3{
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+
+
+
+            #about__us__btn__open__team{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $color-blue;
+                color: $color-white;
+                margin: auto;
+                width: 100%;
+                max-width: 200px;
+
+                &:hover{
+                    border-bottom: 2px solid $color-white;
+                    background-color: $bg-blueDark;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+
+            }
+        }
+    }
 }
+
