@@ -31,4 +31,5 @@ const about__us__team__container = document.querySelector('#about__us__team__con
 
 about__us__btn__open__team.addEventListener('click', () => {
     about__us__team__container.classList.toggle('active')
+    about__us__btn__open__team.classList.toggle('active')
 })
